@@ -1,7 +1,6 @@
 A simple counter app built with JavaScript that increments, decrements, and resets values.
 
-🚀 Demo
-Live Demo:
+🚀 Live Demo:
 
 https://github.com/user-attachments/assets/9a411bbe-d157-4000-a235-de0eabe24c42
 

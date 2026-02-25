@@ -1,0 +1,8 @@
+#weather-icon {
+    width: 150px;
+}
+
+.col-6 img {
+    width: 40px;
+    filter: brightness(0%);
+}

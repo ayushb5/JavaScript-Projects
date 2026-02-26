@@ -4,11 +4,11 @@ A simple Weather Application built using HTML, CSS, Bootstrap, and JavaScript th
 
 🚀 Features:
 
-🌍 Search weather by city name
-🌡 Displays temperature in Celsius
-💧 Shows humidity level
-🌬 Shows wind speed
-🌤 Dynamic weather icons based on condition
+- 🌍 Search weather by city name
+- 🌡 Displays temperature in Celsius
+- 💧 Shows humidity level
+- 🌬 Shows wind speed
+- 🌤 Dynamic weather icons based on condition
 
 🛠️ Technologies Used:
 

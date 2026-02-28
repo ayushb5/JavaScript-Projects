@@ -21,6 +21,21 @@
         class="clock d-flex justify-content-center align-items-center vh-100"
       >
         <div class="bg-dark p-5">
+          <div
+            class="text-white d-flex justify-content-center align-items-center gap-5"
+            id="dateDiv"
+          >
+            <span class="d-flex flex-column justify-content-center">
+              <h1 id="date"></h1>
+            </span>
+            <span class="d-flex flex-column justify-content-center">
+              <h1 id="month"></h1>
+            </span>
+            <span class="d-flex flex-column justify-content-center">
+              <h1 id="year"></h1>
+            </span>
+          </div>
+          <br />
           <div class="text-white d-flex gap-5" id="time">
             <span class="d-flex flex-column justify-content-center">
               <h1 id="hrs"></h1>
@@ -41,17 +56,59 @@
               <span>Seconds</span>
             </span>
           </div>
+
+          <div class="mt-5 set-alarm gap-2 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#alarmModal"
+            >
+              Set Alarm
+            </button>
+
+            <button class="btn btn-danger d-none" id="stopAlarm">
+              Stop Alarm
+            </button>
+
+            <div class="modal" id="alarmModal">
+              <div class="modal-dialog model-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center">Set Alarm Time</h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+
+                  <div
+                    class="modal-body gap-3 d-flex justify-content-center align-items-center w-100"
+                  >
+                    <input
+                      type="time"
+                      class="form-control w-75"
+                      id="alarmTime"
+                    />
+                    <button
+                      type="button"
+                      class="btn btn-success w-25"
+                      id="setAlarm"
+                    >
+                      Set Alarm
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <audio src="alarm.mp3" id="alarmSound"></audio>
+          </div>
         </div>
       </div>
     </div>
-    <script>
-      setInterval(function () {
-        let date = new Date();
-        document.getElementById("hrs").innerHTML = date.getHours();
-        document.getElementById("min").innerHTML = date.getMinutes();
-        document.getElementById("seconds").innerHTML = date.getSeconds();
-      }, 1000);
-    </script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
